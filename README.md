@@ -1,81 +1,26 @@
-# 📊 Data Analyst Portfolio - Abdelkader Bouzourine
+# Portfolio — Abdelkader Bouzourine
 
-## 👋 À propos de moi
+Site statique d'une seule page (HTML, CSS, JavaScript) servi par un petit serveur Python standard. Il présente le hero, les projets Power BI, les compétences, le parcours professionnel et les coordonnées, en français, anglais et arabe (mise en page RTL).
 
-Data Analyst spécialisé en :
-- Salesforce CRM (NPSP)
-- Qualité des données
-- Power BI & visualisation
-- Python (nettoyage et automatisation)
+## Lancer
 
-Expérience dans l’analyse des données de dons et l’optimisation des campagnes marketing.
+```powershell
+python app.py
+```
 
----
+Puis ouvrir <http://127.0.0.1:8000>. Port et adresse peuvent être changés avec `PORTFOLIO_PORT` et `PORTFOLIO_HOST`.
 
-## 🚀 Projets
+Le serveur n'utilise que la bibliothèque standard Python. Les polices viennent de Google Fonts ; les autres ressources sont locales. Les liens LinkedIn et l'email ne s'ouvrent que si le visiteur clique.
 
-### 🧹 1. Nettoyage d’adresses en masse
-🔗 https://github.com/Papapnes/nettoyage-adresses-app
+## Contenu à mettre à jour
 
-Application Python permettant de standardiser les adresses et améliorer la qualité des données CRM.
+- Projets : `projectCatalog` dans [static/app.js](static/app.js). Les PDF sont dans `static/projects/`, les visuels dans `static/assets/projects/`.
+- Parcours : `careerSteps` dans [static/app.js](static/app.js).
+- Compétences et contact : [index.html](index.html).
+- CV : `static/projects/cv-abdelkader-bouzourine.pdf`.
 
-**Compétences :**
-- Python
-- Pandas
-- Data Cleaning
-- Streamlit
+Les détails de construction et les sources sont dans [ANALYSIS.md](ANALYSIS.md).
 
----
+## Avertissement de déploiement
 
-### 🧹 2. Standardisation des civilités (Salesforce)
-🔗 https://github.com/Papapnes/nom-du-repo
-
-Application Streamlit pour remplir automatiquement les civilités selon le genre et la langue.
-
-**Valeur :**
-- Amélioration de la qualité des données
-- Réduction des erreurs CRM
-
----
-
-### 📊 3. Analyse de campagnes marketing (Power BI)
-
-Dashboard permettant d’analyser :
-- le montant collecté
-- le nombre de dons
-- le taux de conversion
-- la performance par campagne
-
-**Compétences :**
-- Power BI
-- DAX
-- Modélisation de données
-
----
-
-### 🎯 4. Segmentation des donateurs
-
-Analyse des donateurs basée sur :
-- fréquence des dons
-- montant moyen
-- engagement
-
-**Objectif :**
-Optimiser le ciblage des campagnes marketing.
-
----
-
-## 🛠️ Compétences techniques
-
-- Python (Pandas, Numpy)
-- Power BI (DAX, Power Query)
-- SQL
-- Salesforce (NPSP)
-- Data Cleaning & Data Quality
-
----
-
-## 📬 Contact
-
-📧 Email : [ton email]  
-🔗 GitHub : https://github.com/Papapnes
+`app.py` sert tout le dossier. En local (127.0.0.1) c'est sans risque, mais si le site est mis en ligne, placez les fichiers publics dans un dossier dédié plutôt que de servir le projet entier (les `.md` et `app.py` seraient accessibles).

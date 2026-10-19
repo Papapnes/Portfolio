@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# A remplacer par l'adresse publique du site une fois connue
+Sitemap: https://VOTRE-DOMAINE.com/sitemap.xml
